@@ -27,4 +27,5 @@ func Migrate() {
 
 	db.AutoMigrate(&models.Categoria{})
 	db.AutoMigrate(&models.Producto{})
+	db.AutoMigrate(&models.Transaccion{})
 }

@@ -15,6 +15,7 @@ func main() {
 	router := mux.NewRouter()
 	routes.SetCategoriaRoutes(router)
 	routes.SetProductoRoutes(router)
+	routes.SetTransaccionRoutes(router)
 	commons.EnableCORS(router)
 
 	server := http.Server{
