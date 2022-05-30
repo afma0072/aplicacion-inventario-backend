@@ -10,7 +10,7 @@ import (
 )
 
 func GetConnection() *gorm.DB {
-	db, error := gorm.Open("mysql", "root:@/aplicacion-inventario?charset=utf8")
+	db, error := gorm.Open("mysql", "root:@/aplicacion-inventario?charset=utf8&parseTime=true&loc=Local")
 
 	if error != nil {
 		log.Fatal(error)
